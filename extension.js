@@ -53,7 +53,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var quotes = ['RogieRog is the greatest!', 'Have I ever told you how awesome RogieRog is?', 'Roger, Roger. Whats our vector, Victor?' ];
+                    var quotes = [ "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
                     API.sendChat(quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
