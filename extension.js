@@ -72,7 +72,6 @@
             }
         }; // beer
 
-        // not finished. still need to replace cmdLink section and get a git.io link
         bot.commands.cccommandsCommand = {
             command: 'cccommands',
             rank: 'user',
@@ -81,7 +80,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat(subChat(basicBot.chat.commandslink, {botname: basicBot.settings.botName, link: basicBot.cmdLink}));
+                    API.sendChat("/me Country Club specific help: http://git.io/-kl-kQ");
                 }
             }
         }; // cccommands
