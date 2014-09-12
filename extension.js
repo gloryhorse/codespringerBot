@@ -72,6 +72,20 @@
             }
         }; // beer
 
+        // not finished. still need to replace cmdLink section and get a git.io link
+        bot.commands.cccommandsCommand = {
+            command: 'cccommands',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat(subChat(basicBot.chat.commandslink, {botname: basicBot.settings.botName, link: basicBot.cmdLink}));
+                }
+            }
+        }; // cccommands
+
         bot.commands.diffieCommand = {
             command: 'diffie',
             rank: 'user',
