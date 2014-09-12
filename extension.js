@@ -18,9 +18,9 @@
          Model code for a bot command:
 
          bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
+         command: 'cmd', //The command to be called. With the standard command literal this would be: !bacon
+         rank: 'user/bouncer/mod/manager', //Minimum user permission to use the command
+         type: 'startsWith/exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
          functionality: function(chat, cmd){
          if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
          if( !bot.commands.executable(this.rank, chat) ) return void (0);
@@ -33,9 +33,9 @@
          */
 
         bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            command: 'bacon',
+            rank: 'user',
+            type: 'exact',
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
@@ -43,7 +43,140 @@
                     API.sendChat("/me Bacon!!!");
                 }
             }
-        };
+        }; // bacon
+
+        bot.commands.banjoCommand = {
+            command: 'banjo',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Paddle faster!!!!", "Wanna see my resonator?", "You play a mean banjo!", "Jeff is the BESTO!", "http://cdn.meme.li/i/ox1dg.jpg" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; //banjo
+
+        bot.commands.beerCommand = {
+            command: 'beer',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Have a PBR on me!!!");
+                }
+            }
+        }; // beer
+
+        bot.commands.diffieCommand = {
+            command: 'diffie',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Joe, Joe, Joe Difffffffie");
+                }
+            }
+        }; // diffie
+
+        bot.commands.dougieCommand = {
+            command: 'dougie',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Ain't a damn one know how to do the dougie. No, not in Kentucky!");
+                }
+            }
+        }; // dougie
+
+        bot.commands.jiveCommand = {
+            command: 'jive',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Hello ladies!");
+                }
+            }
+        }; // jive
+
+        bot.commands.joviCommand = {
+            command: 'jovi',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Jovi knows, so be careful!', 'Hes super!" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // jovi
+
+        bot.commands.mulletCommand = {
+            command: 'mullet',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Do you like my Tennessee Waterfall?", "It's business in the front, Party in the back!" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // mullet
+
+        bot.commands.redneckCommand = {
+            command: 'redneck',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [
+                      "You just might be a Redneck if: You've ever tried to drown a fish.",
+                      "You just might be a Redneck if: You can yell to your mom, 'Hey, Aunt Betty!'",
+                      "You just might be a Redneck if: Your kids fight with the dogs for their dinner.",
+                      "You just might be a Redneck if: You've ever stood in line to have your picture taken with a freak of nature.",
+                      "You just might be a Redneck if: More than one living relative is named after a Southern Civil War general.",
+                      "You just might be a Redneck if: Your boat has not left the driveway in 15 years.",
+                      "You just might be a Redneck if: Your mother has been involved in a fist-fight at a high school sports event.",
+                      "You just might be a Redneck if: None of your shirts cover your stomach.",
+                      "You just might be a Redneck if: You consider a six-pack and a bug-zapper high-quality entertainment.",
+                      "You just might be a Redneck if: You've ever been kicked out of the zoo for heckling the monkeys.",
+                      "You just might be a Redneck if: You've ever bathed with flea and tick soap.",
+                      "You just might be a Redneck if: Your family tree does not fork.",
+                      "You just might be a Redneck if: Your baby's first words are 'Attention K-Mart shoppers.'",
+                      "You just might be a Redneck if: You have a Hefty Bag for a passenger-side window.",
+                      "You just might be a Redneck if: The fifth grade is referred to as ' your senior year. '",
+                      "You just might be a Redneck if: Three quarters of the clothes you own have logos on them.",
+                      "You just might be a Redneck if: Your gene pool doesn't have a 'deep end.'",
+                      "You just might be a Redneck if: You have the taxidermist's number on speed-dial.",
+                      "You just might be a Redneck if: Your dog and your wallet are both on a chain.",
+                      "You just might be a Redneck if: The UFO hotline limits you to one call per day.",
+                      "You just might be a Redneck if: Your two-year-old has more teeth than you do.",
+                      "You just might be a Redneck if: You have ever been accused of lying through your tooth.",
+                      "You just might be a Redneck if: Your underwear doubles as your bathing suit.",
+                      "You just might be a Redneck if: You let you kid pee in the parking lot at K-Mart."
+                        ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // redneck
 
         bot.commands.rogCommand = {
             command: 'rog',
@@ -54,10 +187,35 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     var quotes = [ "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
-                    API.sendChat(quotes[Math.floor(Math.random() * quotes.length)]);
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
-        };
+        }; // rog
+
+        bot.commands.tswizzleCommand = {
+            command: 'tswizzle',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [
+                      "http://youtu.be/LEdqn-Gtg-s?t=23s",
+                      "http://www.dumpaday.com/wp-content/uploads/2013/01/breakup-taylor-swift-meme.jpg",
+                      "http://1.bp.blogspot.com/-1vwpWloqjCY/UDJANvDdAKI/AAAAAAAANoM/UQsKau1o5Ws/s1600/Aaaand-its-gone-country.jpg",
+                      "http://media.tumblr.com/tumblr_m7sr6gG4Ln1r8lhxo.gif",
+                      "http://i258.photobucket.com/albums/hh253/jimifunguzz/taylor-gif-7.gif",
+                      "http://24.media.tumblr.com/bb6654c9755afca23a4ddb3bf6945860/tumblr_mf7olnV9z01r3vsr3o1_500.jpg",
+                      "http://images.cheezburger.com/completestore/2010/9/27/ad2a72e3-9d6b-4b47-92e2-d6d68988bafc.jpg",
+                      "http://cf.chucklesnetwork.agj.co/items/1/3/2/2/7/3/so-are-you-telling-me-that-taylor-swift-isnt-bluegrass.jpg",
+                      "http://assets.diylol.com/hfs/234/3a3/d07/resized/taylor-swift-meme-generator-i-sing-well-if-you-re-deaf-c0f3bd.jpg?1346752503.jpg"
+                        ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // tswizzle
+
 
         //Load the chat package again to account for any changes
         bot.loadChat();
