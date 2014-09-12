@@ -45,6 +45,22 @@
             }
         };
 
+        bot.commands.rogCommand = {
+            command: 'rog',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    quotes = ['RogieRog is the greatest!', 'Have I ever told you how awesome RogieRog is?', 'Roger, Roger. Whats our vector, Victor?' ];
+                    var randomquote = quotes[Math.floor(Math.random()*quotes.length)];
+                    API.sendChat(randomquote);
+
+                }
+            }
+        };
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
