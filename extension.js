@@ -152,6 +152,19 @@
             }
         }; // mullet
 
+        bot.commands.propsCommand = {
+            command: 'props',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                  API.sendChat(user.username +" just gave props to @"+ API.getDJ().username +" for playing a great track!");
+                }
+            }
+        }; // props
+
         bot.commands.redneckCommand = {
             command: 'redneck',
             rank: 'user',

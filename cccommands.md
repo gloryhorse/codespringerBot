@@ -12,6 +12,7 @@ Country Club specfic commands
 |!jive | | |
 |!jovi | | |
 |!mullet | | |
+|!props | | |
 |!redneck | | |
 |!rog | | |
 |!tswizzle | | |
