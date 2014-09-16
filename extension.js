@@ -160,7 +160,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat(API.getuser(obj).username +" just gave props to @"+ API.getDJ().username +" for playing a great track!");
+                  API.sendChat(chat.username +" just gave props to @"+ API.getDJ().username +" for playing a great track!");
                 }
             }
         }; // props
