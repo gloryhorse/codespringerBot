@@ -160,8 +160,8 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  //API.sendChat(basicBot.userUtilities.lookupUserName(name) +" just gave props to @"+ API.getDJ().username +" for playing a great track!"); // fails
-                  API.sendChat(basicBot.userUtilities.lookupUserName(id).username +" just gave props to @"+ API.getDJ().username +" for playing a great track!"); // 
+                  API.sendChat(basicBot.userUtilities.lookupUserName(chat.id).username +" just gave props to @"+ API.getDJ().username +" for playing a great track!"); // returns "not defined"
+                  //API.sendChat(basicBot.userUtilities.lookupUserName(id).username +" just gave props to @"+ API.getDJ().username +" for playing a great track!"); // returns "not defined"
                   //API.sendChat(this.username +" just gave props to @"+ API.getDJ().username +" for playing a great track!"); // this.username returns undefined.
                 }
             }
