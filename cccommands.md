@@ -15,4 +15,9 @@ Country Club specfic commands
 |!props | | |
 |!redneck | | |
 |!rog | | |
+|!scotch | | |
+|!smoke | | |
 |!tswizzle | | |
+|!whiskey | | |
+|!woot | | |
+

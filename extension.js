@@ -111,19 +111,6 @@
             }
         }; // dougie
 
-        bot.commands.wootCommand = {
-            command: 'woot',
-            rank: 'user',
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("https://i.imgflip.com/c78tg.jpg");
-                }
-            }
-        }; // woot
-
         bot.commands.jiveCommand = {
             command: 'jive',
             rank: 'user',
@@ -231,6 +218,33 @@
             }
         }; // rog
 
+        bot.commands.scotchCommand = {
+            command: 'scotch',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://www.youtube.com/watch?v=ovUkATL4l_g");
+                }
+            }
+        }; // scotch
+
+        bot.commands.smokeCommand = {
+            command: 'smoke',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Ask Willie for the grimcreeper", "smoke um if you got um" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // smoke
+
         bot.commands.tswizzleCommand = {
             command: 'tswizzle',
             rank: 'user',
@@ -254,6 +268,33 @@
                 }
             }
         }; // tswizzle
+
+        bot.commands.whiskeyCommand = {
+            command: 'whiskey',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "OOOH that's the good stuff", "Whiskey is spelled with an E. 'Murica!" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // whiskey
+
+        bot.commands.wootCommand = {
+            command: 'woot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://i.imgflip.com/c78tg.jpg");
+                }
+            }
+        }; // woot
 
 
         //Load the chat package again to account for any changes
