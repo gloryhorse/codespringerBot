@@ -337,7 +337,7 @@
         motdEnabled: true,
         motdInterval: 5,
         motd: "mmm beer",
-        filterChat: false,
+        filterChat: true,
         etaRestriction: false,
         welcome: true,
         opLink: null,
