@@ -4,7 +4,7 @@ Country Club specfic commands
 |:------:|:---------:|:--------------------------------------:|
 |!cccommands | | Country Club specfic commands |
 |!bacon | | |
-|!banjo | | |
+|!baanjo | | |
 |!beer | | |
 |!bacon | | |
 |!diffie | | |
