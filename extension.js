@@ -269,6 +269,19 @@
             }
         }; // tswizzle
 
+        bot.commands.vidalertCommand = {
+            command: 'vidalert',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me @REDneck @baanjo , you have GOT to see this!");
+                }
+            }
+        }; // vidalert
+
         bot.commands.whiskeyCommand = {
             command: 'whiskey',
             rank: 'user',

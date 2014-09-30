@@ -18,6 +18,7 @@ Country Club specfic commands
 |!scotch | | |
 |!smoke | | |
 |!tswizzle | | |
+|!vidalert | | |
 |!whiskey | | |
 |!woot | | |
 
