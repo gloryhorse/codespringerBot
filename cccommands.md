@@ -16,6 +16,7 @@ Country Club specfic commands
 |!redneck | | |
 |!rog | | |
 |!scotch | | |
+|!sing | | |
 |!smoke | | |
 |!tswizzle | | |
 |!vidalert | | |

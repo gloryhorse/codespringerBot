@@ -231,6 +231,20 @@
             }
         }; // scotch
 
+        bot.commands.singCommand = {
+            command: 'sing',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me you are my sunshine");
+                    setTimeout(function(){API.sendChat("/me my only sunshine...")},1 * 1000);
+                }
+            }
+        }; // sing
+
         bot.commands.smokeCommand = {
             command: 'smoke',
             rank: 'user',
