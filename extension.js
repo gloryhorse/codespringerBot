@@ -146,7 +146,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://i.imgur.com/0uG0c01.gif");
+                    API.sendChat("https://farm1.staticflickr.com/120/299757814_9c7750e96f.jpg");
                 }
             }
         }; // lighter
