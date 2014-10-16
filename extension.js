@@ -146,7 +146,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me http://files.abovetopsecret.com/files/img/ma5004de85.jpg");
+                    API.sendChat("http://i.imgur.com/0uG0c01.gif");
                 }
             }
         }; // lighter
