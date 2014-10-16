@@ -11,6 +11,7 @@ Country Club specfic commands
 |!dougie | | |
 |!jive | | |
 |!jovi | | |
+|!lighter | | |
 |!mullet | | |
 |!props | | |
 |!redneck | | |
