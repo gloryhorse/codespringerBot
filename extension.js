@@ -145,7 +145,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var quotes = [ "Jovi knows, so be careful!', 'Hes super!" ];
+                    var quotes = [ "Jovi knows, so be careful!", "He's super!" ];
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
