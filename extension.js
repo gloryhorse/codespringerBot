@@ -124,6 +124,33 @@
             }
         }; // dougie
 
+        bot.commands.jamCommand = {
+            command: 'jam',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Beats that dang jelly.... I now prefer jam!", "Jam on! I love this song!" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; //jam
+
+        bot.commands.jellyCommand = {
+            command: 'jelly',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Yuck! Try !jam instead.");
+                }
+            }
+        }; //jelly
+
         bot.commands.jiveCommand = {
             command: 'jive',
             rank: 'user',

@@ -9,6 +9,8 @@ Country Club specfic commands
 |!broom | | |
 |!diffie | | |
 |!dougie | | |
+|!jam | | |
+|!jelly | | |
 |!jive | | |
 |!jovi | | |
 |!lighter | | |
