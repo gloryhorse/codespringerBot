@@ -45,6 +45,19 @@
             }
         }; // bacon
 
+        bot.commands.banjoCommand = {
+            command: 'banjo',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "Paddle faster!!!!", "Wanna see my resonator?", "You play a mean baanjo!", "Jeff is the BESTO!", "http://cdn.meme.li/i/ox1dg.jpg" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; //banjo
         bot.commands.baanjoCommand = {
             command: 'baanjo',
             rank: 'user',
