@@ -309,7 +309,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var quotes = [ "Utinni!", "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
+                    var quotes = [ "Utinni! http://goo.gl/VcSi6l", "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
