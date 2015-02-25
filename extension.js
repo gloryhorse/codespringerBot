@@ -80,10 +80,26 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Have a PBR on me!!!");
+                    var quotes = [ "Have a PBR on me!!!", ":beer: :beer: :beer: :beer: :beer:", ":beer: hiccup :beer:" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
         }; // beer
+
+        bot.commands.bootCommand = {
+            command: 'boot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ ":boot: :boot: :boot:", "DAAASS BOOOOOOT!", ":boot: the :troll", "http://img91.imageshack.us/img91/4048/llallowyouonemoreshot7lq.jpg"];
+
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // boot
 
         bot.commands.broomCommand = {
             command: 'broom',
@@ -137,6 +153,21 @@
             }
         }; // dougie
 
+        bot.commands.drunkCommand = {
+            command: 'drunk',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ ":tropical_drink: :beer: :wine_glass:", "Who me???? :innocent:", "Im not an alcoholic, Im a drunk.  Alcoholics go to meetings.", "I'm getting drunk on a plane" ];
+
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // drunk
+
         bot.commands.jamCommand = {
             command: 'jam',
             rank: 'user',
@@ -145,7 +176,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var quotes = [ "Beats that dang jelly.... I now prefer jam!", "Jam on! I love this song!" ];
+                    var quotes = [ "Beats that dang jelly.... I now prefer jam!", "Jam on! I love this song!", "I prefer jelly, but whatever..."  ];
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
@@ -278,7 +309,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var quotes = [ "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
+                    var quotes = [ "Utinni!", "RogieRog is the greatest!", "Have I ever told you how awesome RogieRog is?", "Roger, Roger. Whats our vector, Victor?" ];
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
@@ -429,7 +460,7 @@
         afkRankCheck: "user",
         motdEnabled: true,
         motdInterval: 5,
-        motd: "mmm beer",
+        motd: "mmm beer :beers:",
         filterChat: true,
         etaRestriction: false,
         welcome: true,

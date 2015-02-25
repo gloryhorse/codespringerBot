@@ -6,9 +6,11 @@ Country Club specfic commands
 |!bacon | | |
 |!baanjo/banjo | | |
 |!beer | | |
+|!boot | | |
 |!broom | | |
 |!diffie | | |
 |!dougie | | |
+|!drunk | | |
 |!jam | | |
 |!jelly | | |
 |!jive | | |
