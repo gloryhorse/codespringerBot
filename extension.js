@@ -249,6 +249,20 @@
             }
         }; // mullet
 
+        bot.commands.ogCommand = {
+            command: 'og',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "http://cdn.meme.am/instances/500x/56280137.jpg", "oh hai! wanna mai tai? :tropical_drink:" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // og (OG-Stirling-Had2)
+
         bot.commands.propsCommand = {
             command: 'props',
             rank: 'user',

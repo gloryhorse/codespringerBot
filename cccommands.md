@@ -17,6 +17,7 @@ Country Club specfic commands
 |!jovi | | |
 |!lighter | | |
 |!mullet | | |
+|!og | | |
 |!props | | |
 |!redneck | | |
 |!rog | | |
