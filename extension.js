@@ -249,8 +249,8 @@
             }
         }; // mullet
 
-        bot.commands.ogCommand = {
-            command: 'og',
+        bot.commands.ogogCommand = {
+            command: 'ogog',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
@@ -261,7 +261,7 @@
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
-        }; // og (OG-Stirling-Had2)
+        }; // ogog (OG-Stirling-Had2)
 
         bot.commands.propsCommand = {
             command: 'props',
