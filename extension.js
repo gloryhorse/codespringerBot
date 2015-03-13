@@ -95,7 +95,6 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     var quotes = [ ":boot: :boot: :boot:", "DAAASS BOOOOOOT!", ":boot: the :troll", "http://img91.imageshack.us/img91/4048/llallowyouonemoreshot7lq.jpg"];
-
                     API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
                 }
             }
@@ -126,6 +125,20 @@
                 }
             }
         }; // cccommands
+
+        bot.commands.cheerCommand = {
+            command: 'cheer',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "YEEEEEEEEEEEEEEHAWWWWWWWWWWWWWW!!!", "I love this DJ!", "You're tearing up the vinyl!" ];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // cheer
 
         bot.commands.diffieCommand = {
             command: 'diffie',

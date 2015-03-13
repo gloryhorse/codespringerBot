@@ -8,6 +8,7 @@ Country Club specfic commands
 |!beer | | |
 |!boot | | |
 |!broom | | |
+|!cheer | | |
 |!diffie | | |
 |!dougie | | |
 |!drunk | | |
