@@ -9,6 +9,7 @@ Country Club specfic commands
 |!boot | | |
 |!broom | | |
 |!cheer | | |
+|!damnuplug | | |
 |!diffie | | |
 |!dougie | | |
 |!drunk | | |
