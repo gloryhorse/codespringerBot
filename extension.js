@@ -472,7 +472,7 @@
         botName: "CletusBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        maximumAfk: 45,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
