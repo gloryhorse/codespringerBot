@@ -471,6 +471,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "CletusBot",
         language: "english",
+        cmdDeletion: false,
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         maximumAfk: 45,
         afkRemoval: true,
@@ -486,7 +487,6 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        cmdDeletion: false,
         lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
