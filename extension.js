@@ -486,7 +486,7 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        commanddeletion: false,
+        cmdDeletion: false,
         lockskipPosition: 3,
         lockskipReasons: [
             ["theme", "This song does not fit the room theme. "],
