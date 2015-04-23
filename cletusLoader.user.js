@@ -3,8 +3,10 @@
 // @namespace      net.cletus
 // @description    Autorun cletus on plug.dj
 // @author         jgm106
-// @include        https://plug.dj/*
-// @version        0.1
+// @include        https://plug.dj/the-country-club-1
+// @version        0.2
+// @updateURL      https://rawgit.com/RogieRog/basicBot-customization/master/cletusLoader.user.js
+// @downloadURL    https://rawgit.com/RogieRog/basicBot-customization/master/cletusLoader.user.js
 // @grant          none
 // ==/UserScript==
 
