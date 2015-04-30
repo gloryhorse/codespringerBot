@@ -53,7 +53,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("This boy's way off the charts, as far as I can tell...Ohhhh Weeeee momma he's a double XL!);
+                    API.sendChat("This boys way off the charts, as far as I can tell...Ohhhh Weeeee momma hes a double XL!);
                 }
             }
         }; // big
