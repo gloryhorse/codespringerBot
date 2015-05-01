@@ -6,6 +6,7 @@ Country Club specfic commands
 |!bacon | | |
 |!baanjo/banjo | | |
 |!beer | | |
+|!big | | |
 |!boot | | |
 |!broom | | |
 |!cheer | | |
@@ -19,6 +20,7 @@ Country Club specfic commands
 |!jovi | | |
 |!lighter | | |
 |!mullet | | |
+|!nlt | | |
 |!og | | |
 |!props | | |
 |!redneck | | |

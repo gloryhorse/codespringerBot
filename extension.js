@@ -85,7 +85,6 @@
             }
         }; //baanjo
 
-
         bot.commands.beerCommand = {
             command: 'beer',
             rank: 'user',
@@ -288,6 +287,20 @@
                 }
             }
         }; // mullet
+
+        bot.commands.nltCommand = {
+            command: 'nlt',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var quotes = [ "We don't need no stinkin' vwls", "This statement left intentionally blank"];
+                    API.sendChat("/me " + quotes[Math.floor(Math.random() * quotes.length)]);
+                }
+            }
+        }; // nlt
 
         bot.commands.ogCommand = {
             command: 'og',
