@@ -8,10 +8,12 @@ Country Club specfic commands
 |!beer | | |
 |!big | | |
 |!boot | | |
+|!briefingclown | | |
 |!broom | | |
 |!cheer | | |
 |!damnuplug | | |
 |!diffie | | |
+|!dl | | |
 |!dougie | | |
 |!drunk | | |
 |!jam | | |
