@@ -181,7 +181,7 @@
     var basicBot = {
         version: "1.1",
         status: false,
-        name: "basicBot",
+        name: "CodeSpringerBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -196,12 +196,12 @@
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupEmoji: true, // true or false
             cmdDeletion: true,
-            maximumAfk: 120,
+            maximumAfk: 10,
             afkRemoval: true,
             maximumDc: 60,
-            bouncerPlus: true,
+            bouncerPlus: false,
             blacklistEnabled: true,
             lockdownEnabled: false,
             lockGuard: false,
@@ -209,12 +209,12 @@
             cycleGuard: true,
             maximumCycletime: 10,
             voteSkip: false,
-            voteSkipLimit: 10,
+            voteSkipLimit: 3,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 11.5,
             autodisable: true,
-            commandCooldown: 30,
+            commandCooldown: 10,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
