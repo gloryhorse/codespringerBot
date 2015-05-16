@@ -179,7 +179,6 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "1.1",
         status: false,
         name: "CodeSpringerBot",
         loggedInID: null,
@@ -198,17 +197,17 @@
             startupVolume: 0, // 0-100
             startupEmoji: true, // true or false
             cmdDeletion: true,
-            maximumAfk: 10,
+            maximumAfk: 30,
             afkRemoval: true,
-            maximumDc: 60,
+            maximumDc: 30,
             bouncerPlus: false,
-            blacklistEnabled: true,
+            blacklistEnabled: false,
             lockdownEnabled: false,
-            lockGuard: false,
+            lockGuard: true,
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: false,
+            voteSkip: true,
             voteSkipLimit: 3,
             historySkip: false,
             timeGuard: true,
