@@ -180,6 +180,7 @@
 
     var basicBot = {
         status: false,
+        version: .
         name: "CodeSpringerBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
