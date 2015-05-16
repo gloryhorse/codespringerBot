@@ -192,7 +192,7 @@
         settings: {
             botName: "CodeSpringerBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://github.com/gloryhorse/codespringerBot/blob/master/cccommands.md",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: true, // true or false
