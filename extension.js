@@ -178,9 +178,9 @@
     var botMaintainer = "Benzi (Quoona)"
     var botCreatorIDs = ["3851534", "4105209"];
 
-    var basicBot + {
-        status: true,
-        version: 1.1
+    var basicBot = {
+    	version: 1.1
+        status: false,
         name: "CodeSpringerBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
