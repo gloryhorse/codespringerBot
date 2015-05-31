@@ -179,9 +179,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-    	version:_
+    	version:_.
         status: false,
-        name:"Ashley",
+        name:"basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -191,7 +191,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "CodeSpringerBot",
+            botName: "Ashley",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
